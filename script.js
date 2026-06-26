@@ -12,7 +12,7 @@ const tg = window.Telegram.WebApp;
             user = JSON.parse(userString);
         }
     }
-
+    const userpfp = document.getElementById("user-profile-img");
     // 3. Вывод данных
     const nameEl = document.getElementById('user-name');
     const idEl = document.getElementById('user-tg-id');
@@ -20,6 +20,7 @@ const tg = window.Telegram.WebApp;
     if (user) {
         nameEl.textContent = user.first_name || "Без имени";
         idEl.textContent = user.id || "Нет ID";
+        userpfp.src = user.photo_url;
     } else {
         nameEl.textContent = "Данные не получены";
         idEl.textContent = "Попробуйте перезагрузить";
