@@ -1,6 +1,6 @@
 body {
   font-family: sans-serif;
-  background-color: var(--tg-theme-bg-color, #ffffff);
+  background-color: #00ccdd;
   color: var(--tg-theme-text-color, #000000);
   margin: 0;
   padding: 20px;
