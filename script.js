@@ -3,7 +3,7 @@ const tg = window.Telegram.WebApp;
 
     // 1. Попробуем взять данные из initDataUnsafe
     let user = tg.initDataUnsafe.user;
-
+    let uuser = window.Telegram.WebApp.initDataUnsafe.user;
     // 2. Если пусто, попробуем разобрать initData вручную (иногда данные там в строке)
     if (!user && tg.initData) {
         const urlParams = new URLSearchParams(tg.initData);
@@ -20,7 +20,7 @@ const tg = window.Telegram.WebApp;
     if (user) {
         nameEl.textContent = user.first_name || "Без имени";
         idEl.textContent = user.id || "Нет ID";
-        userpfp.src = user.photo_url;
+        userpfp.src = uuser.photo_url;
     } else {
         nameEl.textContent = "Данные не получены";
         idEl.textContent = "Попробуйте перезагрузить";
