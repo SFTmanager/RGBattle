@@ -1,7 +1,7 @@
 body {
   font-family: sans-serif;
   background-color: var(--tg-theme-bg-color, #ffffff);
-  color: var(--tg-theme-text-color, #000000);
+  color: var(--tg-theme-text-color, #ffffff);
   margin: 0;
   padding: 20px;
   display: flex;
