@@ -11,7 +11,7 @@ body {
 /* В твоем style.css */
 #play-btn {
     padding: 15px 40px; /* Добавим отступы, чтобы текст не прилипал к краям */
-    border: 4 px solid;
+    border: 4px solid;
     border-color: white;/* Убираем стандартную рамку, чтобы градиент был чище */
     color: #333;        /* Цвет текста (лучше темный на желтом) */
     font-size: 18px;
