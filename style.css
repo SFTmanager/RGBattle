@@ -8,3 +8,22 @@ body {
   flex-direction: column;
   align-items: center;
 }
+/* В твоем style.css */
+#play-btn {
+    padding: 15px 40px; /* Добавим отступы, чтобы текст не прилипал к краям */
+    border: none;       /* Убираем стандартную рамку, чтобы градиент был чище */
+    color: #333;        /* Цвет текста (лучше темный на желтом) */
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    background: linear-gradient(45deg, #FFD700 0%, #FFFFFF 100%);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.4); /* Тень в цвет золота */
+    transition: transform 0.1s, box-shadow 0.1s;    /* Анимация нажатия */
+}
+
+/* Эффект при нажатии */
+#play-btn:active {
+    transform: scale(0.95); /* Кнопка чуть сжимается */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
