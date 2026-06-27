@@ -35,3 +35,11 @@ body {
 main {
     flex-grow: 1; /* Основной блок забирает все свободное место */
 }
+
+footer {
+    position: fixed;
+    bottom: 20px; /* Отступ от нижнего края */
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Центрирует кнопку по горизонтали */
+}
