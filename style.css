@@ -38,8 +38,10 @@ main {
 
 footer {
     position: fixed;
-    bottom: 20px; /* Отступ от нижнего края */
+    bottom: 0;
+    left: 0;
     width: 100%;
+    padding: 20px 0;
     display: flex;
-    justify-content: center; /* Центрирует кнопку по горизонтали */
+    justify-content: center;
 }
