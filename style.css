@@ -20,11 +20,18 @@ body {
     background: linear-gradient(45deg, #FFD700 0%, #FFFFFF 100%);
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(255, 215, 0, 0.4); /* Тень в цвет золота */
-    transition: transform 0.1s, box-shadow 0.1s;    /* Анимация нажатия */
+    transition: transform 0.1s, box-shadow 0.1s;
+    min-height: 100vh; /* Высота всего экрана */
+    display: flex;
+    flex-direction: column;/* Анимация нажатия */
 }
 
 /* Эффект при нажатии */
 #play-btn:active {
     transform: scale(0.95); /* Кнопка чуть сжимается */
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+main {
+    flex-grow: 1; /* Основной блок забирает все свободное место */
 }
